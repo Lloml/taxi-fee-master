@@ -1,4 +1,8 @@
 module.exports = function main() {
     console.log("Debug Info");
-    return 'Hello World!';
+    return taximeter();
 };
+
+function taximeter(){
+    return 6;
+}
