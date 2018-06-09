@@ -3,13 +3,21 @@ const taximeter = require('../main/main')
 
 
 
-describe('practice-3-2', function () {
+describe('taxu fee', function () {
 
-   
-
-    it("选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新A集", function () {
-        var result = taximeter();
-
-        expect(result).toEqual(6);
+    let distance1 = 4, duration =  2;
+    let distance2 = 7;
+    let distance3 = 16;
+    it("taxu fee", function () {
+        var result = taximeter(distance1,duration);
+        expect(result).toEqual(8);
+    });
+    it("taxu fee1", function () {
+        var result = taximeter(distance2, duration);
+        expect(result).toEqual(11);
+    });
+    it("taxu fee2", function () {
+        var result = taximeter(distance3, duration);
+        expect(result).toEqual(21);
     });
 });
